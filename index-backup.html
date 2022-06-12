@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Streamit - Responsive Bootstrap 4 Template</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="images/favicon.ico" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- Typography CSS -->
+   <link rel="stylesheet" href="css/typography.css">
+   <!-- Style -->
+   <link rel="stylesheet" href="css/style.css" />
+   <!-- Responsive -->
+   <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body>
+   <!-- loader Start -->
+   <div id="loading">
+      <div id="loading-center">
+      </div>
+   </div>
+   <!-- Navbar -->
+   <svg style="display:none;">
+      <defs>
+
+         <g id="home">
+            <path fill="#bfb8b8"
+               d="M42,48H6c-3.3,0-6-2.7-6-6V6c0-3.3,2.7-6,6-6h36c3.3,0,6,2.7,6,6v36C48,45.3,45.3,48,42,48z" />
+            <path fill="#212121" d="M20.8,35.5v-9.6h6.4v9.6h8V22.7H40L24,8.3L8,22.7h4.8v12.8H20.8z" />
+         </g>
+
+         <g id="search">
+            <path fill="#bfb8b8" d="M22.9,20.1h-1.5l-0.5-0.5c1.8-2.1,2.9-4.8,2.9-7.7C23.8,5.3,18.5,0,11.9,0S0,5.3,0,11.9s5.3,11.9,11.9,11.9
+           c3,0,5.7-1.1,7.7-2.9l0.5,0.5v1.4l9.1,9.1l2.7-2.7L22.9,20.1z M11.9,20.1c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2
+           S16.4,20.1,11.9,20.1z" />
+         </g>
+
+         <g id="map">
+            <path fill="#bfb8b8"
+               d="M16,14.2c-1,0-1.8,0.8-1.8,1.8s0.8,1.8,1.8,1.8c1,0,1.8-0.8,1.8-1.8S17,14.2,16,14.2z M16,0
+           C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16s16-7.2,16-16C32,7.2,24.8,0,16,0z M19.5,19.5L6.4,25.6l6.1-13.1l13.1-6.1L19.5,19.5z" />
+         </g>
+
+         <g id="planner">
+            <path fill="#bfb8b8"
+               d="M28.4,3.6h-1.8V0h-3.6v3.6H8.9V0H5.3v3.6H3.6C1.6,3.6,0,5.1,0,7.1L0,32c0,2,1.6,3.6,3.6,3.6h24.9c2,0,3.6-1.6,3.6-3.6V7.1C32,5.1,30.4,3.6,28.4,3.6z M28.4,32H3.6V12.4h24.9V32z M7.1,16H16v8.9H7.1V16z" />
+         </g>
+
+      </defs>
+   </svg>
+
+
+   <nav class="nav__cont">
+      <ul class="nav">
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+               <use xlink:href="#home"></use>
+            </svg>
+            <a data-sn-right="@favorites" href="/index.html">Home</a>
+         </li>
+
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+               <use xlink:href="#search"></use>
+            </svg>
+            <a data-sn-right="@favorites" href="/search.html">Search</a>
+         </li>
+
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+               <use xlink:href="#map"></use>
+            </svg>
+            <a data-sn-right="@favorites" href="/movie-details.html">Movie Details</a>
+         </li>
+
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 35.6">
+               <use xlink:href="#planner"></use>
+            </svg>
+            <a data-sn-right="@favorites" href="">Planner</a>
+         </li>
+
+      </ul>
+   </nav>
+   <!-- loader END -->
+   <!-- Header -->
+   <!-- <header id="main-header">
+         <div class="main-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <a href="#" class="navbar-toggler c-toggler" data-toggle="collapse"
+                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                           aria-expanded="false" aria-label="Toggle navigation">
+                           <div class="navbar-toggler-icon" data-toggle="collapse">
+                              <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                              <span class="navbar-menu-icon navbar-menu-icon--middle"></span>
+                              <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
+                           </div>
+                        </a>
+                        <a class="navbar-brand" href="index.html"> <img class="img-fluid logo" src="images/logo.png"
+                           alt="streamit" /> </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <div class="menu-main-menu-container">
+                              <ul id="top-menu" class="navbar-nav ml-auto">
+                                 <li data-sn-down="@favorites" class="menu-item">
+                                    <a class="focusable" href="index.html">Home</a>
+                                 </li>
+                                 <li data-sn-down="@favorites" class="menu-item">
+                                    <a class="focusable" href="show-category.html">Tv Shows</a>
+                                 </li>
+                                 <li data-sn-down="@favorites" class="menu-item">
+                                    <a class="focusable" href="movie-category.html">Movies</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="mobile-more-menu">
+                           <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton"
+                              data-toggle="more-toggle" aria-haspopup="true" aria-expanded="false">
+                           <i class="ri-more-line"></i>
+                           </a>
+                           <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                              <div class="navbar-right position-relative">
+                                 <ul class="d-flex align-items-center justify-content-end list-inline m-0">
+                                    <li>
+                                       <a href="#" class="search-toggle">
+                                       <i class="ri-search-line"></i>
+                                       </a>
+                                       <div class="search-box iq-search-bar">
+                                          <form action="#" class="searchbox">
+                                             <div class="form-group position-relative">
+                                                <input type="text" class="text search-input font-size-12"
+                                                   placeholder="type here to search...">
+                                                <i class="search-link ri-search-line"></i>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li class="nav-item nav-icon">
+                                       <a href="#" class="search-toggle position-relative">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22"
+                                             height="22" class="noti-svg">
+                                             <path fill="none" d="M0 0h24v24H0z" />
+                                             <path
+                                                d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                          </svg>
+                                          <span class="bg-danger dots"></span>
+                                       </a>
+                                       <div class="iq-sub-dropdown">
+                                          <div class="iq-card shadow-none m-0">
+                                             <div class="iq-card-body">
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                         alt="streamit" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">Boop Bitty</h6>
+                                                         <small class="font-size-12"> just now</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                         alt="streamit" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">The Last Breath</h6>
+                                                         <small class="font-size-12">15 minutes ago</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                         alt="streamit" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">The Hero Camp</h6>
+                                                         <small class="font-size-12">1 hour ago</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                                       <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
+                                          alt="user">
+                                       </a>
+                                       <div class="iq-sub-dropdown iq-user-dropdown">
+                                          <div class="iq-card shadow-none m-0">
+                                             <div class="iq-card-body p-0 pl-3 pr-3">
+                                                <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-file-user-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">Manage Profile</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-settings-4-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">Settings</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="pricing-plan.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-settings-4-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">Pricing Plan</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="login.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-logout-circle-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0">Logout</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="navbar-right menu-right">
+                           <ul class="d-flex align-items-center list-inline m-0">
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="search-toggle device-search">
+                                 <i class="ri-search-line"></i>
+                                 </a>
+                                 <div class="search-box iq-search-bar d-search">
+                                    <form action="#" class="searchbox">
+                                       <div class="form-group position-relative">
+                                          <input type="text" class="text search-input font-size-12"
+                                             placeholder="type here to search...">
+                                          <i class="search-link ri-search-line"></i>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </li>
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="search-toggle" data-toggle="search-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                       class="noti-svg">
+                                       <path fill="none" d="M0 0h24v24H0z" />
+                                       <path
+                                          d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                    </svg>
+                                    <span class="bg-danger dots"></span>
+                                 </a>
+                                 <div class="iq-sub-dropdown">
+                                    <div class="iq-card shadow-none m-0">
+                                       <div class="iq-card-body">
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                   alt="streamit" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">Boot Bitty</h6>
+                                                   <small class="font-size-12"> just now</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                   alt="streamit" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">The Last Breath</h6>
+                                                   <small class="font-size-12">15 minutes ago</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                   alt="streamit" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">The Hero Camp</h6>
+                                                   <small class="font-size-12">1 hour ago</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
+                                    data-toggle="search-toggle">
+                                 <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle" alt="user">
+                                 </a>
+                                 <div class="iq-sub-dropdown iq-user-dropdown">
+                                    <div class="iq-card shadow-none m-0">
+                                       <div class="iq-card-body p-0 pl-3 pr-3">
+                                          <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-file-user-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Manage Profile</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-settings-4-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Settings</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="pricing-plan.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-settings-4-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Pricing Plan</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="login.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-logout-circle-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Logout</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                     <div class="nav-overlay"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header> -->
+   <!-- Header End -->
+   <!-- Slider Start -->
+   <!-- <section id="home" class="iq-main-slider p-0">
+         <div id="home-slider" class="slider m-0 p-0">
+            <div class="slide slick-bg s-bg-1">
+               <div class="container-fluid position-relative h-100">
+                  <div class="slider-inner h-100">
+                     <div class="row align-items-center  h-100">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                           <a href="javascript:void(0);">
+                              <div class="channel-logo" data-animation-in="fadeInLeft" data-delay-in="0.5">
+                                 <img src="images/logo.png" class="c-logo" alt="streamit">
+                              </div>
+                           </a>
+                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                              data-delay-in="0.6">bushland</h1>
+                           <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="1">
+                              <span class="badge badge-secondary p-2">18+</span>
+                              <span class="ml-3">2 Seasons</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="1.2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                              dummy text ever since the 1500s.
+                           </p>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
+                              <a href="show-details.html" data-id="1" data-sn-down="@favorites" data-sn-left="3" data-sn-right="2" class="section-3 btn btn-hover">
+                                 <i class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slide slick-bg s-bg-2">
+               <div class="container-fluid position-relative h-100">
+                  <div class="slider-inner h-100">
+                     <div class="row align-items-center  h-100">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                           <a href="javascript:void(0);">
+                              <div class="channel-logo" data-animation-in="fadeInLeft">
+                                 <img src="images/logo.png" class="c-logo" alt="streamit">
+                              </div>
+                           </a>
+                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft">sail coaster</h1>
+                           <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="0.5">
+                              <span class="badge badge-secondary p-2">16+</span>
+                              <span class="ml-3">2h 40m</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="0.7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                              dummy text ever since the 1500s.
+                           </p>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1">
+                              <a href="movie-details.html" class="section-3 btn btn-hover"><i class="fa fa-play mr-2"
+                                 aria-hidden="true"  data-id="2" data-sn-left="1" data-sn-right="3"></i>Play Now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slide slick-bg s-bg-3">
+               <div class="container-fluid position-relative h-100">
+                  <div class="slider-inner h-100">
+                     <div class="row align-items-center  h-100">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                           <a href="javascript:void(0);">
+                              <div class="channel-logo" data-animation-in="fadeInLeft">
+                                 <img src="images/logo.png" class="c-logo" alt="streamit">
+                              </div>
+                           </a>
+                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft">the army</h1>
+                           <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="0.5">
+                              <span class="badge badge-secondary p-2">20+</span>
+                              <span class="ml-3">3h</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="0.7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                              dummy text ever since the 1500s.
+                           </p>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1">
+                              <a href="movie-details.html" class="section-3 btn btn-hover"><i class="fa fa-play mr-2"
+                                 aria-hidden="true"  data-id="3" data-sn-left="2" data-sn-right="1"></i>Play Now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle"
+               fill="none" stroke="currentColor">
+               <circle r="20" cy="22" cx="22" id="test"></circle>
+            </symbol>
+         </svg>
+      </section> -->
+   <!-- Slider End -->
+   <!-- MainContent -->
+   <div class="main-content">
+      <section id="iq-favorites">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title"><a href="movie-category.html">Your Favorites</a></h4>
+                  </div>
+                  <div class="favorites-contens">
+                     <ul class="favorites-slider list-inline row p-0 mb-0 slider1">
+                        <li v-for="slider in sliderData" class="slide-item">
+                           <a :href="'movie-details.html?vid=' + slider.id">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img :src="slider.img" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6>{{slider.name}}</h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">13+</div>
+                                       <span class="text-white">2h 30m</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <span class="btn btn-hover">
+                                          <i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          Play Now
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="iq-upcoming-movie">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title"><a href="movie-category.html">Upcoming Movies</a></h4>
+                  </div>
+                  <div class="upcoming-contens">
+                     <ul class="favorites-slider list-inline row p-0 mb-0 slider2">
+                        <li v-for="slider in sliderData" class="slide-item">
+                           <a :href="'movie-details.html?vid=' + slider.id">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img :src="slider.img" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6>{{slider.name}}</h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">13+</div>
+                                       <span class="text-white">2h 30m</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <span class="btn btn-hover">
+                                          <i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          Play Now
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="iq-suggestede" class="s-margin">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title"><a href="show-category.html">Suggested For You</a></h4>
+                  </div>
+                  <div class="suggestede-contens">
+                     <ul class="list-inline favorites-slider row p-0 mb-0 slider3">
+                        <li v-for="slider in sliderData" class="slide-item">
+                           <a :href="'movie-details.html?vid=' + slider.id">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img :src="slider.img" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6>{{slider.name}}</h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">13+</div>
+                                       <span class="text-white">2h 30m</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <span class="btn btn-hover">
+                                          <i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          Play Now
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="iq-tvthrillers" class="s-margin">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 overflow-hidden">
+                  <div class="iq-main-header d-flex align-items-center justify-content-between">
+                     <h4 class="main-title"><a href="show-category.html">TV Thrillers</a></h4>
+                  </div>
+                  <div class="tvthrillers-contens">
+                     <ul class="favorites-slider list-inline row p-0 mb-0 slider4">
+                        <li v-for="slider in sliderData" class="slide-item">
+                           <a :href="'movie-details.html?vid=' + slider.id">
+                              <div class="block-images position-relative">
+                                 <div class="img-box">
+                                    <img :src="slider.img" class="img-fluid" alt="">
+                                 </div>
+                                 <div class="block-description">
+                                    <h6>{{slider.name}}</h6>
+                                    <div class="movie-time d-flex align-items-center my-2">
+                                       <div class="badge badge-secondary p-1 mr-2">13+</div>
+                                       <span class="text-white">2h 30m</span>
+                                    </div>
+                                    <div class="hover-buttons">
+                                       <span class="btn btn-hover">
+                                          <i class="fa fa-play mr-1" aria-hidden="true"></i>
+                                          Play Now
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+   <footer class="mb-0">
+      <div class="container-fluid">
+         <div class="block-space">
+            <div class="row">
+               <div class="col-lg-3 col-md-4">
+                  <ul class="f-link list-unstyled mb-0">
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="movie-category.html">Movies</a></li>
+                     <li><a href="show-category.html">Tv Shows</a></li>
+                     <li><a href="#">Coporate Information</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <ul class="f-link list-unstyled mb-0">
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                     <li><a href="#">Help</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-4">
+                  <ul class="f-link list-unstyled mb-0">
+                     <li><a href="#">FAQ</a></li>
+                     <li><a href="#">Cotact Us</a></li>
+                     <li><a href="#">Legal Notice</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-12 r-mt-15">
+                  <div class="d-flex">
+                     <a href="#" class="s-icon">
+                        <i class="ri-facebook-fill"></i>
+                     </a>
+                     <a href="#" class="s-icon">
+                        <i class="ri-skype-fill"></i>
+                     </a>
+                     <a href="#" class="s-icon">
+                        <i class="ri-linkedin-fill"></i>
+                     </a>
+                     <a href="#" class="s-icon">
+                        <i class="ri-whatsapp-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright py-2">
+         <div class="container-fluid">
+            <p class="mb-0 text-center font-size-14 text-body">STREAMIT - 2020 All Rights Reserved</p>
+         </div>
+      </div>
+   </footer>
+   <!-- MainContent End-->
+   <!-- back-to-top -->
+   <div id="back-to-top">
+      <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+   </div>
+   <!-- back-to-top End -->
+   <!-- jQuery, Popper JS -->
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <!-- Bootstrap JS -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Slick JS -->
+   <script src="js/slick.min.js"></script>
+   <!-- owl carousel Js -->
+   <script src="js/owl.carousel.min.js"></script>
+   <!-- select2 Js -->
+   <script src="js/select2.min.js"></script>
+   <!-- Magnific Popup-->
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <!-- Slick Animation-->
+   <!-- <script src="js/slick-animation.min.js"></script> -->
+   <!-- Custom JS-->
+   <script src="js/custom.js"></script>
+   <script src="js/spatial-navigation.js"></script>
+   <script src="https://unpkg.com/vue@3"></script>
+   <script defer>
+      $(function () {
+
+
+         Array(4).fill().map((_, i) => i + 1).forEach(async item => {
+            // Backend Requests
+
+            // numbers 1 to 4
+            window[`slider${item}Data`] = await (await fetch('http://localhost:8000/api/videos/random')).json();
+
+            // Vue
+
+            Vue.createApp({
+               data() {
+                  return {
+                     sliderData: window[`slider${item}Data`]
+                  }
+               }
+            }).mount(`.slider${item}`)
+         })
+
+
+
+         // Spacial Navigation
+
+         var SN = SpatialNavigation;
+
+         SN.init();
+
+         SN.add({
+            id: 'menu',
+            selector: '.nav__cont a'
+         });
+
+         SN.add({
+            id: 'hero-arrows',
+            selector: '.iq-main-slider .slick-arrow'
+         });
+
+         SN.add({
+            id: 'hero-dots',
+            selector: '.section-3',
+            enterTo: 'last-focused'
+         });
+
+         SN.add({
+            id: 'favorites',
+            selector: '.favorites-slider a',
+            enterTo: 'last-focused'
+         });
+
+         SN.add({
+            id: 'footer',
+            selector: 'footer a'
+         });
+
+         $('.favorites-slider li').on('sn:willfocus', function () {
+            console.log('focusing', $(this))
+            SN.pause()
+            $(this).ensureVisible(function () { 
+               SN.focus(this)
+               SN.resume()
+            })
+            return false
+         })
+         .on('sn:enter-up', function() {
+            
+            $(this).children('a').eq(0).click()
+         })
+
+         SN.makeFocusable();
+         SN.focus('menu');
+      });
+   </script>
+</body>
+</script>
+</body>
+
+</html>

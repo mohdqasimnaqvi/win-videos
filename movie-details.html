@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Streamit - Responsive Bootstrap 4 Template</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="images/favicon.ico" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- Typography CSS -->
+   <link rel="stylesheet" href="css/typography.css">
+   <!-- Style -->
+   <link rel="stylesheet" href="css/style.css" />
+   <!-- Responsive -->
+   <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+   <div id="loading">
+      <div id="loading-center">
+      </div>
+   </div>
+   <!-- Navbar -->
+   <svg style="display:none;">
+      <defs>
+
+         <g id="home">
+            <path fill="#bfb8b8"
+               d="M42,48H6c-3.3,0-6-2.7-6-6V6c0-3.3,2.7-6,6-6h36c3.3,0,6,2.7,6,6v36C48,45.3,45.3,48,42,48z" />
+            <path fill="#212121" d="M20.8,35.5v-9.6h6.4v9.6h8V22.7H40L24,8.3L8,22.7h4.8v12.8H20.8z" />
+         </g>
+
+         <g id="search">
+            <path fill="#bfb8b8" d="M22.9,20.1h-1.5l-0.5-0.5c1.8-2.1,2.9-4.8,2.9-7.7C23.8,5.3,18.5,0,11.9,0S0,5.3,0,11.9s5.3,11.9,11.9,11.9
+           c3,0,5.7-1.1,7.7-2.9l0.5,0.5v1.4l9.1,9.1l2.7-2.7L22.9,20.1z M11.9,20.1c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2
+           S16.4,20.1,11.9,20.1z" />
+         </g>
+
+         <g id="map">
+               <path d="M2.5 12.5H25V27H2.5V12.5ZM2.5 12.5L21.5 2.5" fill="transparent" stroke="#bfb8b8" stroke-width="4"/>
+               
+         </g>
+
+         <g id="planner">
+            <path d="M13 6L13.3536 5.64645C13.1583 5.45118 12.8417 5.45118 12.6464 5.64645L13 6ZM19.5 12.5L19.1464 12.8536C19.3417 13.0488 19.6583 13.0488 19.8536 12.8536L19.5 12.5ZM32 0.5C32 0.223858 31.7761 0 31.5 0H27C26.7239 0 26.5 0.223858 26.5 0.5C26.5 0.776142 26.7239 1 27 1H31V5C31 5.27614 31.2239 5.5 31.5 5.5C31.7761 5.5 32 5.27614 32 5V0.5ZM1.35355 18.3536L13.3536 6.35355L12.6464 5.64645L0.646447 17.6464L1.35355 18.3536ZM12.6464 6.35355L19.1464 12.8536L19.8536 12.1464L13.3536 5.64645L12.6464 6.35355ZM19.8536 12.8536L31.8536 0.853553L31.1464 0.146447L19.1464 12.1464L19.8536 12.8536Z" stroke="#bfb8b8"/>
+         </g>
+         <g id="categories">
+            <path fill="#bfb8b8" fill-rule="nonzero" d="M5.9199,11.4697 C7.3299,11.4697 8.4599,12.6107 8.4599,14.0307 L8.4599,14.0307 L8.4599,17.4397 C8.4599,18.8497 7.3299,19.9997 5.9199,19.9997 L5.9199,19.9997 L2.5399,19.9997 C1.1399,19.9997 -0.0001,18.8497 -0.0001,17.4397 L-0.0001,17.4397 L-0.0001,14.0307 C-0.0001,12.6107 1.1399,11.4697 2.5399,11.4697 L2.5399,11.4697 Z M17.46,11.4697 C18.86,11.4697 20,12.6107 20,14.0307 L20,14.0307 L20,17.4397 C20,18.8497 18.86,19.9997 17.46,19.9997 L17.46,19.9997 L14.08,19.9997 C12.67,19.9997 11.54,18.8497 11.54,17.4397 L11.54,17.4397 L11.54,14.0307 C11.54,12.6107 12.67,11.4697 14.08,11.4697 L14.08,11.4697 Z M5.9199,-9.32587341e-14 C7.3299,-9.32587341e-14 8.4599,1.15 8.4599,2.561 L8.4599,2.561 L8.4599,5.97 C8.4599,7.39 7.3299,8.53 5.9199,8.53 L5.9199,8.53 L2.5399,8.53 C1.1399,8.53 -0.0001,7.39 -0.0001,5.97 L-0.0001,5.97 L-0.0001,2.561 C-0.0001,1.15 1.1399,-9.32587341e-14 2.5399,-9.32587341e-14 L2.5399,-9.32587341e-14 Z M17.46,-9.32587341e-14 C18.86,-9.32587341e-14 20,1.15 20,2.561 L20,2.561 L20,5.97 C20,7.39 18.86,8.53 17.46,8.53 L17.46,8.53 L14.08,8.53 C12.67,8.53 11.54,7.39 11.54,5.97 L11.54,5.97 L11.54,2.561 C11.54,1.15 12.67,-9.32587341e-14 14.08,-9.32587341e-14 L14.08,-9.32587341e-14 Z"></path>
+         </g>
+         <g id="login">
+               <path  fill="#bfb8b8" d="M12.1094 0C5.41992 0 0 5.41992 0 12.1094C0 18.7988 5.41992 24.2188 12.1094 24.2188C18.7988 24.2188 24.2188 18.7988 24.2188 12.1094C24.2188 5.41992 18.7988 0 12.1094 0ZM12.1094 4.6875C14.4824 4.6875 16.4062 6.61133 16.4062 8.98438C16.4062 11.3574 14.4824 13.2812 12.1094 13.2812C9.73633 13.2812 7.8125 11.3574 7.8125 8.98438C7.8125 6.61133 9.73633 4.6875 12.1094 4.6875ZM12.1094 21.4844C9.24316 21.4844 6.6748 20.1855 4.95605 18.1543C5.87402 16.4258 7.6709 15.2344 9.76562 15.2344C9.88281 15.2344 10 15.2539 10.1123 15.2881C10.7471 15.4932 11.4111 15.625 12.1094 15.625C12.8076 15.625 13.4766 15.4932 14.1064 15.2881C14.2187 15.2539 14.3359 15.2344 14.4531 15.2344C16.5479 15.2344 18.3447 16.4258 19.2627 18.1543C17.5439 20.1855 14.9756 21.4844 12.1094 21.4844Z"/>
+         </g>
+
+      </defs>
+   </svg>
+
+
+   <nav class="nav__cont">
+      <ul class="nav">
+         <img class="img" src="https://video.winfoundation.in/images/logo.png" alt="">
+
+         <li class="nav__items " style="margin-top: auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+               <use xlink:href="#home"></use>
+            </svg>
+            <a data-sn-right="@video" href="/index.html">Home</a>
+         </li>
+
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+               <use xlink:href="#search"></use>
+            </svg>
+            <a data-sn-right="@video" href="/search.html">Search</a>
+         </li>
+
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+               <use xlink:href="#map"></use>
+            </svg>
+            <a data-sn-right="@video" href="/movie-details.html">Movies</a>
+         </li>
+
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 35.6">
+               <use xlink:href="#planner"></use>
+            </svg>
+            <a data-sn-right="@video" href="">New & Popular</a>
+         </li>
+         <li class="nav__items ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 35.6">
+               <use xlink:href="#categories"></use>
+            </svg>
+            <a data-sn-right="@video" href="/category.html">Categories</a>
+         </li>
+         
+         
+         <li class="nav__items" style="margin-top: auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 35.6">
+               <use xlink:href="#login"></use>
+            </svg>
+            <a data-sn-right="@video" href="/login.html">Login</a>
+         </li>
+      </ul>
+   </nav>
+        
+   <!-- Header -->
+   <!-- <header id="main-header">
+      <div class="main-header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12">
+                  <nav class="navbar navbar-expand-lg navbar-light p-0">
+                     <a href="#" class="navbar-toggler c-toggler" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <div class="navbar-toggler-icon" data-toggle="collapse">
+                           <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                           <span class="navbar-menu-icon navbar-menu-icon--middle"></span>
+                           <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
+                        </div>
+                     </a>
+                     <a class="navbar-brand" href="index.html"> <img class="img-fluid logo" src="images/logo.png"
+                           alt="streamit" /> </a>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="menu-main-menu-container">
+                           <ul id="top-menu" class="navbar-nav ml-auto">
+                              <li class="menu-item">
+                                 <a data-sn-down="#video"  href="index.html">Home</a>
+                              </li>
+                              <li class="menu-item">
+                                 <a data-sn-down="#video" href="show-category.html">Tv Shows</a>
+                              </li>
+                              <li class="menu-item">
+                                 <a data-sn-down="#video" href="movie-category.html">Movies</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="mobile-more-menu">
+                        <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton" data-toggle="more-toggle"
+                           aria-haspopup="true" aria-expanded="false">
+                           <i class="ri-more-line"></i>
+                        </a>
+                        <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                           <div class="navbar-right position-relative">
+                              <ul class="d-flex align-items-center justify-content-end list-inline m-0">
+                                 <li>
+                                    <a href="#" class="search-toggle">
+                                       <i class="ri-search-line"></i>
+                                    </a>
+                                    <div class="search-box iq-search-bar">
+                                       <form action="#" class="searchbox">
+                                          <div class="form-group position-relative">
+                                             <input type="text" class="text search-input font-size-12"
+                                                placeholder="type here to search...">
+                                             <i class="search-link ri-search-line"></i>
+                                          </div>
+                                       </form>
+                                    </div>
+                                 </li>
+                                 <li class="nav-item nav-icon">
+                                    <a href="#" class="search-toggle position-relative">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                          class="noti-svg">
+                                          <path fill="none" d="M0 0h24v24H0z" />
+                                          <path
+                                             d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                       </svg>
+                                       <span class="bg-danger dots"></span>
+                                    </a>
+                                    <div class="iq-sub-dropdown">
+                                       <div class="iq-card shadow-none m-0">
+                                          <div class="iq-card-body">
+                                             <a href="#" class="iq-sub-card">
+                                                <div class="media align-items-center">
+                                                   <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                      alt="streamit" />
+                                                   <div class="media-body">
+                                                      <h6 class="mb-0 ">Boop Bitty</h6>
+                                                      <small class="font-size-12"> just now</small>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <a href="#" class="iq-sub-card">
+                                                <div class="media align-items-center">
+                                                   <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                      alt="streamit" />
+                                                   <div class="media-body">
+                                                      <h6 class="mb-0 ">The Last Breath</h6>
+                                                      <small class="font-size-12">15 minutes ago</small>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <a href="#" class="iq-sub-card">
+                                                <div class="media align-items-center">
+                                                   <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                      alt="streamit" />
+                                                   <div class="media-body">
+                                                      <h6 class="mb-0 ">The Hero Camp</h6>
+                                                      <small class="font-size-12">1 hour ago</small>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                                       <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
+                                          alt="user">
+                                    </a>
+                                    <div class="iq-sub-dropdown iq-user-dropdown">
+                                       <div class="iq-card shadow-none m-0">
+                                          <div class="iq-card-body p-0 pl-3 pr-3">
+                                             <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                                <div class="media align-items-center">
+                                                   <div class="right-icon">
+                                                      <i class="ri-file-user-line text-primary"></i>
+                                                   </div>
+                                                   <div class="media-body ml-3">
+                                                      <h6 class="mb-0 ">Manage Profile</h6>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                                <div class="media align-items-center">
+                                                   <div class="right-icon">
+                                                      <i class="ri-settings-4-line text-primary"></i>
+                                                   </div>
+                                                   <div class="media-body ml-3">
+                                                      <h6 class="mb-0 ">Settings</h6>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <a href="pricing-plan.html" class="iq-sub-card setting-dropdown">
+                                                <div class="media align-items-center">
+                                                   <div class="right-icon">
+                                                      <i class="ri-settings-4-line text-primary"></i>
+                                                   </div>
+                                                   <div class="media-body ml-3">
+                                                      <h6 class="mb-0 ">Pricing Plan</h6>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <a href="login.html" class="iq-sub-card setting-dropdown">
+                                                <div class="media align-items-center">
+                                                   <div class="right-icon">
+                                                      <i class="ri-logout-circle-line text-primary"></i>
+                                                   </div>
+                                                   <div class="media-body ml-3">
+                                                      <h6 class="mb-0">Logout</h6>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="navbar-right menu-right">
+                        <ul class="d-flex align-items-center list-inline m-0">
+                           <li class="nav-item nav-icon">
+                              <a href="#" class="search-toggle device-search">
+                                 <i class="ri-search-line"></i>
+                              </a>
+                              <div class="search-box iq-search-bar d-search">
+                                 <form action="#" class="searchbox">
+                                    <div class="form-group position-relative">
+                                       <input type="text" class="text search-input font-size-12"
+                                          placeholder="type here to search...">
+                                       <i class="search-link ri-search-line"></i>
+                                    </div>
+                                 </form>
+                              </div>
+                           </li>
+                           <li class="nav-item nav-icon">
+                              <a href="#" class="search-toggle" data-toggle="search-toggle">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                    class="noti-svg">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                       d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                 </svg>
+                                 <span class="bg-danger dots"></span>
+                              </a>
+                              <div class="iq-sub-dropdown">
+                                 <div class="iq-card shadow-none m-0">
+                                    <div class="iq-card-body">
+                                       <a href="#" class="iq-sub-card">
+                                          <div class="media align-items-center">
+                                             <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3" alt="streamit" />
+                                             <div class="media-body">
+                                                <h6 class="mb-0 ">Boot Bitty</h6>
+                                                <small class="font-size-12"> just now</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card">
+                                          <div class="media align-items-center">
+                                             <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3" alt="streamit" />
+                                             <div class="media-body">
+                                                <h6 class="mb-0 ">The Last Breath</h6>
+                                                <small class="font-size-12">15 minutes ago</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card">
+                                          <div class="media align-items-center">
+                                             <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3" alt="streamit" />
+                                             <div class="media-body">
+                                                <h6 class="mb-0 ">The Hero Camp</h6>
+                                                <small class="font-size-12">1 hour ago</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="nav-item nav-icon">
+                              <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
+                                 data-toggle="search-toggle">
+                                 <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle" alt="user">
+                              </a>
+                              <div class="iq-sub-dropdown iq-user-dropdown">
+                                 <div class="iq-card shadow-none m-0">
+                                    <div class="iq-card-body p-0 pl-3 pr-3">
+                                       <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                          <div class="media align-items-center">
+                                             <div class="right-icon">
+                                                <i class="ri-file-user-line text-primary"></i>
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Manage Profile</h6>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                          <div class="media align-items-center">
+                                             <div class="right-icon">
+                                                <i class="ri-settings-4-line text-primary"></i>
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Settings</h6>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="pricing-plan.html" class="iq-sub-card setting-dropdown">
+                                          <div class="media align-items-center">
+                                             <div class="right-icon">
+                                                <i class="ri-settings-4-line text-primary"></i>
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Pricing Plan</h6>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="login.html" class="iq-sub-card setting-dropdown">
+                                          <div class="media align-items-center">
+                                             <div class="right-icon">
+                                                <i class="ri-logout-circle-line text-primary"></i>
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Logout</h6>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+                  <div class="nav-overlay"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header> -->
+   <!-- Header End -->
+   <!-- Banner Start -->
+   <div id="app">
+   <div class="video-container iq-main-slider">
+      <video class="video" data-sn-down="@video" id="video" controls loop poster="https://ik.imagekit.io/n64csrmwjp1/fef319afc94b1ebefaa095eae17ee7fc.png">
+      </video>
+      <img style="position: absolute;top: 0;width: 100vw;object-fit: cover;object-position: bottom;" src="https://ik.imagekit.io/n64csrmwjp1/fef319afc94b1ebefaa095eae17ee7fc.png" alt="">
+      <span class="playbtn-movie-details">
+      <i class="fa fa-play" aria-hidden="true"></i>
+      </span>
+   </div>
+   <!-- Banner End -->
+   <!-- MainContent -->
+   <div class="main-content movi">
+      <section class="movie-detail container-fluid">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="trending-info g-border">
+                  <h1 class="trending-text big-title text-uppercase mt-0">Lecture on mahe ramazan</h1>
+                  <ul class="p-0 list-inline d-flex align-items-center movie-content">
+                     <li class="text-white">Ramazan</li>
+                     <li class="text-white">Lecture</li>
+                     <li class="text-white">Single</li>
+                  </ul>
+                  <p class="trending-dec w-100 mb-0">A very in-depth lecture on the month of ramazan</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      </div>
+   </div>
+   <!-- MainContent End-->
+   <!-- back-to-top -->
+   <div id="back-to-top">
+      <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+   </div>
+   <!-- back-to-top End -->
+   <!-- jQuery, Popper JS -->
+   <script src="js/jquery-3.4.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <!-- Bootstrap JS -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Slick JS -->
+   <script src="js/slick.min.js"></script>
+   <!-- owl carousel Js -->
+   <script src="js/owl.carousel.min.js"></script>
+   <!-- select2 Js -->
+   <script src="js/select2.min.js"></script>
+   <!-- Magnific Popup-->
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <!-- Slick Animation-->
+   <script src="js/slick-animation.min.js"></script>
+   <!-- Custom JS-->
+   <script src="js/custom.js"></script>
+
+   <script src="https://unpkg.com/vue@3"></script>
+   <script src="js/spatial-navigation.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.5.14/hls.min.js" integrity="sha512-js37JxjD6gtmJ3N2Qzl9vQm4wcmTilFffk0nTSKzgr3p6aitg73LR205203wTzCCC/NZYO2TAxSa0Lr2VMLQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script defer>
+         $(function() {
+            function playHLSstream(video, url) {
+
+               if (Hls.isSupported()) {
+               var hls = new Hls({
+                  debug: true,
+               });
+               hls.loadSource(url);
+               hls.attachMedia(video);
+               }
+               // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+               // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
+               // This is using the built-in support of the plain video element, without using hls.js.
+               else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+               video.src = url;
+               }
+    
+            }
+            playHLSstream(document.querySelector('video'), 'https://cloudfront.winfoundation.in/video/20007122904710/playlist.m3u8')
+
+  var SN = SpatialNavigation;
+
+  SN.init();
+
+  SN.add({
+    id: 'menu',
+    selector: '.nav__cont a'
+  });
+
+  SN.add({
+     id: 'realvideo',
+     selector: '#video'
+  })
+
+  SN.add({
+     id: 'video',
+     selector: '.playbtn-movie-details'
+  })
+  SN.add({
+     id: 'shares',
+     selector: '.share-icons li'
+  })
+
+  SN.add({
+    id: 'favorites',
+    selector: '.favorites-slider a  '
+  });
+  SN.add({
+    id: 'footer',
+    selector: 'footer a'
+  });
+
+  $('.favorites-slider li').on('sn:willfocus', function() {
+      // Stop listening key events.
+      console.log('focusing', $(this))
+      $(this).ensureVisible(function(){})
+     return true
+  })
+
+  $('.playbtn-movie-details').on('sn:enter-up', function() {
+     $('img').remove()
+     $(this).remove()
+     document.querySelector('video').play()
+     document.querySelector('video').requestFullscreen()
+     SN.focus($('video'))
+  })
+
+  $('video').on('sn:enter-up', function() {
+       document.exitFullscreen()
+       return true;
+  })
+
+  $('.main-content *')
+    .on('sn:willfocus', function() {
+      SN.pause();
+
+      $(this).ensureVisible(function() {
+        SN.focus(this);
+        SN.resume();
+      });
+
+      return false;
+    })
+    
+  SN.makeFocusable();
+
+  SN.focus('menu');
+});
+</script>
+</body>
+
+</html>
